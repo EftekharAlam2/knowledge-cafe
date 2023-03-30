@@ -1,0 +1,41 @@
+[
+  {
+    "id": "01",
+    "name": "Mr.Raju",
+    "title": "How to get your first job as a self-taught programmer",
+    "time": 5,
+    "date": "Mar 14",
+    "author-img": "https://unsplash.com/photos/mEZ3PoFGs_k",
+    "img": "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  },
+
+  {
+    "id": "02",
+    "name": "Mrs. Setara",
+    "title": "How to get your first job as a self-taught programmer",
+    "time": 10,
+    "date": "Mar 14",
+    "author-img": "https://unsplash.com/photos/YUu9UAcOKZ4",
+    "img": "https://unsplash.com/photos/IKUYGCFmfw4"
+  },
+
+  {
+    "id": "03",
+    "name": "Mina Mostofa",
+    "title": "How to get your first job as a self-taught programmer",
+    "time": 12,
+    "date": "Mar 14",
+    "author-img": "https://unsplash.com/photos/rDEOVtE7vOs",
+    "img": "https://unsplash.com/photos/4hbJ-eymZ1o"
+  },
+
+  {
+    "id": "04",
+    "name": "Mrs. Setara",
+    "title": "How to get your first job as a self-taught programmer",
+    "time": 10,
+    "date": "Mar 24",
+    "author-img": "https://unsplash.com/photos/YUu9UAcOKZ4",
+    "img": "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  }
+]
