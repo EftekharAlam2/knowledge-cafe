@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Datashow = ({ value }) => {
   return (
@@ -16,15 +18,23 @@ const Datashow = ({ value }) => {
             </div>
             <div className="my-auto">
               <p className="text-black font-semibold">{value.author_name}</p>
-              <p>$ days ago</p>
+              <p className="text-xs">{value.date}</p>
             </div>
           </div>
-          <div className="my-auto">min read</div>
+          <div className="my-auto">
+            <button className="text-black">
+              {value.author_min_time} min read{" "}
+              <FontAwesomeIcon icon={faBookmark} />
+            </button>
+          </div>
         </div>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+        <p className="text-black text-3xl mt-4 font-semibold">{value.title}</p>
+        <div>
+          <button>
+            <p className="underline underline-offset-1 text-sky-600 mt-2">
+              Mark as read
+            </p>
+          </button>
         </div>
       </div>
     </div>
