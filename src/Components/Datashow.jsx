@@ -2,7 +2,7 @@ import React from "react";
 
 const Datashow = (props) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl my-10 mx-4">
+    <div className="card w-96 md:w-11/12 bg-base-100 shadow-xl my-10 ms-3 md:mx-auto">
       <figure>
         <img src={props.value.cover_img} alt="Shoes" />
       </figure>
