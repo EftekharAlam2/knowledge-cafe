@@ -3,6 +3,8 @@ import Datashow from "./Components/Datashow";
 import Nav from "./Components/Nav";
 import Resultdata from "./Components/Resultdata";
 import Resultdatatwo from "./Components/Resultdatatwo";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [values, setvalues] = useState([]);
@@ -21,6 +23,12 @@ const App = () => {
   };
 
   const handleBookmark = (data2) => {
+    for (const value2 of bookmark) {
+      if (value2.id === data2.id) {
+        toast.error("Key ID already exists!");
+        return;
+      }
+    }
     const newData = [...bookmark, data2];
     setBookmark(newData);
   };
@@ -48,6 +56,7 @@ const App = () => {
           ))}
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
