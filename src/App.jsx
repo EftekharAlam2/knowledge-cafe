@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Datashow from "./Components/Datashow";
+import Nav from "./Components/Nav";
 
 const App = () => {
   const [values, setvalues] = useState([]);
@@ -12,6 +13,7 @@ const App = () => {
 
   return (
     <div>
+      <Nav></Nav>
       {values.map((value) => (
         <Datashow key={value.id} value={value}></Datashow>
       ))}
