@@ -1,7 +1,9 @@
 import React from "react";
+import Resultdatatwo from "./Resultdatatwo";
 
 const Resultdata = (props) => {
   const { data, bookmark } = props;
+
   let totalSpentTime = 0;
   for (const value of data) {
     totalSpentTime = totalSpentTime + value.author_min_time;
@@ -14,14 +16,11 @@ const Resultdata = (props) => {
           Spent time on read : {totalSpentTime} min
         </p>
       </div>
-      <div className="border-solid border-0 bg-slate-300 p-5 px-6 rounded mt-5 text-xl">
+      <div className="border-solid border-0 bg-slate-300 p-5 px-6 mt-5 text-xl">
         <p className="text-black font-semibold">
           Bookmarked Blogs: {bookmark.length}
         </p>
       </div>
-      {/* <div>
-        <p className="text-black">{bookmark.title}</p>
-      </div> */}
     </div>
   );
 };

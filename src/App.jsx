@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Datashow from "./Components/Datashow";
 import Nav from "./Components/Nav";
 import Resultdata from "./Components/Resultdata";
+import Resultdatatwo from "./Components/Resultdatatwo";
 
 const App = () => {
   const [values, setvalues] = useState([]);
@@ -22,9 +23,6 @@ const App = () => {
   const handleBookmark = (data2) => {
     const newData = [...bookmark, data2];
     setBookmark(newData);
-    {
-      newData.map((title) => console.log(title.title));
-    }
   };
 
   return (
@@ -42,10 +40,13 @@ const App = () => {
             ></Datashow>
           ))}
         </div>
-        <div className="my-5 md:pe-20 p-10 md:fixed md:right-0">
+        <div className="my-5 md:ms-20 p-10 md:fixed md:right-0 ">
           <Resultdata data={data} bookmark={bookmark}></Resultdata>
+
+          {bookmark.map((value2) => (
+            <Resultdatatwo key={value2.id} value={value2}></Resultdatatwo>
+          ))}
         </div>
-        {/* md:fixed md:right-0 */}
       </div>
     </div>
   );
