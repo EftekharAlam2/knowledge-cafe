@@ -5,6 +5,7 @@ import Resultdata from "./Components/Resultdata";
 import Resultdatatwo from "./Components/Resultdatatwo";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Blog from "./Components/Blog";
 
 const App = () => {
   const [values, setvalues] = useState([]);
@@ -25,7 +26,7 @@ const App = () => {
   const handleBookmark = (data2) => {
     for (const value2 of bookmark) {
       if (value2.id === data2.id) {
-        toast.error("Key ID already exists!");
+        toast.error("You Have Already Bookmarked This Blog!!");
         return;
       }
     }
@@ -48,7 +49,7 @@ const App = () => {
             ></Datashow>
           ))}
         </div>
-        <div className="my-5 md:ms-20 p-10 md:fixed md:right-0 ">
+        <div className="my-5 md:ms-20 p-10 md:fixed md:right-0">
           <Resultdata data={data} bookmark={bookmark}></Resultdata>
 
           {bookmark.map((value2) => (
@@ -56,6 +57,7 @@ const App = () => {
           ))}
         </div>
       </div>
+      <Blog></Blog>
       <ToastContainer></ToastContainer>
     </div>
   );
